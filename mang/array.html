@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt">
+    <input type="button" id="btnad" value="add" onclick="add_arr();"/>
+    <input type="button" id="btndi" value="display" onclick="dis_arr();"/>
+    <div id="result"></div>
+<script>
+    let x = 0;
+    let array = Array();
+    function add_arr(){
+        array[x] = document.getElementById("txt").value;
+        alert("Element: " + array[x] +"add at index" + x);
+        x++;
+        document.getElementById("txt").value = "add";
+    }
+    function dis_arr(){
+        let e = "<hr/>";
+        for(let i = 0;i < array.length; i++){
+            e += "Element" + i + " = " + array[i] + "<br/>"; 
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+</script>
+</body>
+</html>

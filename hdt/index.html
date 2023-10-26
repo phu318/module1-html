@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <canvas id="myCanvas" width="1368px" height="768px" style="border: 1px solid #d3d3d3;"> -->
+    <canvas id="demoCanvas" width="600px" height="500px"></canvas>
+    <script>
+        // let MyDate = function(day, month, year){
+        //     this.day = day;
+        //     this.month = month;
+        //     this.year = year;
+        //     this.getDay = function(){
+        //         return this.day
+        //     }
+        //     this.getMonth = function(){
+        //         return this.month
+        //     }
+        //     this.getYear = function(){
+        //         return this.year
+        //     }
+        //     this.setDay = function(day){
+        //         this.day = day;
+        //     }
+        //     this.setMonth = function(month){
+        //         this.month = month;
+        //     }
+        //     this.setYear = function(year){
+        //         this.year = year;
+        //     }
+        // }
+        // let date = new MyDate(2, 2, 2017);
+        // date.setDay(10);
+        // date.setMonth(10);
+        // date.setYear(2019);
+        // let day = date.getDay();
+        // let month = date.getMonth();
+        // let year = date.getYear();
+        // alert(day + "/" + month + "/" + year );
+        //-------------------------------------------------------
+        // let Circle = function(radius){
+        //     this.radius = radius;
+        //     this.getRadius = function(){
+        //         return radius;
+        //     }
+        //     this.getArea = function(){
+        //         return Math.PI * radius * radius;
+        //     }
+
+        // }
+        // let circle = new Circle(2);
+        // let radius = circle.getRadius();
+        // let area = circle.getArea();
+        // alert("radius :" + radius + "; area" + area);
+        //-------------------------------------------------------
+
+        // function Circle(x, y, radius) {
+        //     this.x = x;
+        //     this.y = y;
+        //     this.radius = radius;
+        // }
+
+        // function getRandomHex() {
+        //     return Math.floor(Math.random() * 255);
+        // }
+
+        // function getRandomColor() {
+        //     var red = getRandomHex();
+        //     var green = getRandomHex();
+        //     var blue = getRandomHex();
+        //     return "rgb(" + red + "," + blue + "," + green + ")";
+        // }
+
+        // function createCircle() {
+        //     var ctx = document.getElementById("myCanvas").getContext("2d");
+        //     var radius = Math.floor(Math.random() * 80);
+        //     var color = getRandomColor();
+        //     var x = Math.random() * window.innerWidth;
+        //     var y = Math.random() * window.innerHeight;
+        //     var circle = new Circle(x, y, radius);
+        //     ctx.beginPath();
+        //     ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+        //     ctx.fillStyle = color;
+        //     ctx.fill();
+        // }
+
+        // function createMultipleCircle() {
+        //     for (var i = 0; i < 30; i++) {
+        //         createCircle();
+        //     }
+        // }
+
+        // createMultipleCircle();
+        // class Vehinhchunhat {
+        //     width;
+        //     height;
+        //     constructor(width, height) {
+        //         this.width = width;
+        //         this.height = height;
+        //     }
+        //     getWidth() {
+        //         return this.width;
+        //     }
+        //     getHeight() {
+        //         return this.height;
+        //     }
+        //     setWidth(width) {
+        //         this.width = width;
+        //     }
+        //     setHeight(height) {
+        //         this.height = height;
+        //     }
+        //     getArena() {
+        //         return this.width * this.height;
+        //     }
+        //     getPerimeter(){
+        //         return (this.width + this.height) * 2;
+        //     }
+        // }
+        // let myVehinhchunhat = new Vehinhchunhat(150,50);
+        // let width = myVehinhchunhat.getWidth();
+        // let height = myVehinhchunhat.getHeight();
+        // myVehinhchunhat.setWidth(200);
+        // myVehinhchunhat.getWidth();
+        // document.write(myVehinhchunhat.getWidth());
+        // let canvas = document.getElementById("demoCanvas");
+        // let ctx = canvas.getContext('2d');
+        // ctx.fillStyle = '#fa4b2a';
+        // ctx.fillRect(10, 10, width, height)
+        class Temperature{
+            celsius
+            constructor(celsius){
+                this.celsius = celsius;
+            }
+            fahrenheit(){
+                return 9.5 * this.celsius + 32
+            }
+            doKelvin(){
+                return this.celsius + 273.15
+            }
+
+        }
+        let myTemperature = new Temperature (25);
+       let myfahrenheit = myTemperature.fahrenheit();
+       let mydoKelvin = myTemperature.doKelvin();
+        document.write("Nhiet do cua do F : " + myfahrenheit + "<br>" + "Nhiet do cua do kelvin :" + mydoKelvin); 
+    </script>
+</body>
+
+</html>

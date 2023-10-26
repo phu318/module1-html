@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table></table>
+    <script>
+       // let str = "";
+        //for (let i = 5; i > 0; i--) {
+          //  str += "<tr>";
+            //for (let j = 0; j < i; j++) {
+            //   str += "<td>*</td>";
+           // }
+           // str += "</tr>";
+        //}
+        let str = "";
+    for (let i = 0; i <= 4; i++) {
+        str += "<tr>";
+        for (let j = 0; j <= 4-i; j++) {
+            str += "<td>*</td>";
+        }
+        for(let k = 4-i; k<= 4;k++){
+            str += "<td>*</td>";
+        }
+    
+        str += "</tr>";
+    }
+        document.querySelector("table").innerHTML = str;
+    </script>
+    </script>
+</body>
+
+</html>

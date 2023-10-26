@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /** 
+        viết css dạng internal
+        selectors: bộ chọn **/
+        .left-form {
+            display: inline-block;
+            width: 100px;
+        }
+
+        div label:first-child {
+            color: rgb(230, 10, 203, 1);
+        }
+
+        form {
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #80808000;
+        }
+
+        #title-form {
+            background-color: rgb(84, 105, 212) ;
+            padding: 10px 5px 10px 5px;
+            text-align: center;
+            
+        }
+
+        .row {
+            margin-bottom: 10px;
+        }
+        body{
+            background-color: rosybrown;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form method="post" action="24h.com.vn/dangky">
+        <h3 id="title-form">Registration form</h3>
+        <div class="row">
+            <label style="color:rgb(230, 10, 203, 1) ;" for="" class="left-form">First Name</label>
+            <input type="text" placeholder="Enter first name" name="firstname">
+        </div>
+        <div class="row">
+            <label for="" class="left-form">Last Name</label>
+            <input type="text" placeholder="Enter last name" name="lastname">
+        </div>
+        <div class="row">
+            <label for="" class="left-form">Email</label>
+            <input type="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="row">
+            <label for="" class="left-form">Date of birth</label>
+            <input type="date" placeholder="Enter email">
+        </div>
+        <div class="row">
+            <label for="" class="left-form">Image</label>
+            <input type="file" placeholder="Enter email" name="file">
+        <div class="form">
+            <form>  
+                <label for="" class="left-form"></label>
+                <input class="btn" type = "submit" style="width: 100px;margin-top: 10px;
+                border: 0;
+                outline: 0;
+                cursor: pointer;
+                color: white;
+                background-color: rgb(84, 105, 212);
+                box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+                border-radius: 4px;
+                font-size: 14px;
+                font-weight: 500;
+                padding: 4px 8px;
+                display: inline-block;
+                min-height: 28px;
+                transition: background-color .24s,box-shadow .24s;
+                :hover {
+                    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 3px 9px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+                }
+            " name="btSubmit" value="Submit" /> 
+                </form>
+                
+        </div>
+        

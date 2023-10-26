@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="position: absolute;">Do you love me</h1>
+    <input type="button" value=" yes " onclick="myFuntionT()".style="position:absolute"></input>
+    <input type="button" id="demo" value=" no " onmouseover="myFuntionF()".style="position: relative; left: 318px; top: 700px">
+    <script>
+        function myFuntionT(){
+            alert('<3');
+        }
+        function myFuntionF(){
+            let a = Math.round(Math.random() * window.innerWidth);
+            let b = Math.round(Math.random() * window.innerHeight); 
+            document.getElementById('demo').style.left = a + "px";
+            document.getElementById('demo').style.top = b + "px";
+        }
+    </script>
+</body>
+</html>
